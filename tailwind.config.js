@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors")
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
@@ -6,15 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.blueGray,
-        red: colors.rose
-      }
+        blue: {
+          light: "#d2f6f9",
+          DEFAULT: "#1dd1e1",
+          shock: "#0000ff",
+        },
+      },
     },
   },
   variants: {
     extend: {
-      scale: ['group-hover'],
-      transform: ['group-hover']
+      scale: ["group-hover"],
+      transform: ["group-hover"],
     },
   },
   plugins: [],
